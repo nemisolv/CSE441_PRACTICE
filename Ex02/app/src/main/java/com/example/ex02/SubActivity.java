@@ -1,6 +1,7 @@
 package com.example.ex02;
 
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +10,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class SubActivity extends AppCompatActivity {
+    private Button btnOk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +22,11 @@ public class SubActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        btnOk = findViewById(R.id.btn_ok);
+        btnOk.setOnClickListener(v -> {
+            finish();
+        });
+
     }
 }

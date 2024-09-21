@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Ex01</string>
+    <string name="hint_res">Kết quả</string>
+    <string name="txt_btn">Tổng</string>
+    <string name="hint_a">Nhập A</string>
+    <string name="txt_heading">Demo_Constrain</string>
+    <string name="txt_b">Nhập B</string>
 </resources>
