@@ -41,8 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:layout_marginTop="72dp"
-        android:background="#ccc"
-
+        android:background="@drawable/rounded_btn"
         android:text="Call dialog"
         android:textAllCaps="true"
         app:layout_constraintEnd_toEndOf="parent"
