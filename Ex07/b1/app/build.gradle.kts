@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.nemisolv.ex07"
+    namespace = "com.nemisolv.ex08"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.nemisolv.ex07"
+        applicationId = "com.nemisolv.ex08"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
