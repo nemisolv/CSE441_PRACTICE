@@ -5,14 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ResultActivity">
+
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Yêu cầu kết quả"
-        android:textColor="@color/red"
+        android:text="Xử lý kết quả"
+        android:textColor="@color/light_green"
         android:textSize="20sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="104dp"
         android:text="Nhập A:"
-        android:textColor="@color/light_green"
+        android:textColor="@color/red"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
@@ -41,27 +42,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="Nhập B:"
-        android:textColor="@color/light_green"
+        android:textColor="@color/red"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="Kết quả   :"
-        android:textColor="@color/red"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintHorizontal_bias="0.695"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/txt_a"
@@ -97,23 +84,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.162" />
 
-    <EditText
-        android:id="@+id/txt_res"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.266" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
@@ -122,19 +92,39 @@
         app:layout_constraintGuide_percent="0.25" />
 
     <Button
-        android:id="@+id/btn_require_res"
+        android:id="@+id/btn_sum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="340dp"
+        android:layout_marginBottom="364dp"
         android:background="@drawable/custom_btn"
         android:backgroundTint="@null"
         android:paddingHorizontal="24dp"
-        android:text="Yêu cầu kết quả"
+        android:text="trả về tổng"
         android:textAllCaps="true"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.618"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_b"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="364dp"
+        android:background="@drawable/custom_btn"
+        android:backgroundTint="@null"
+        android:paddingHorizontal="24dp"
+        android:text="trả về hiệu"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_b"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

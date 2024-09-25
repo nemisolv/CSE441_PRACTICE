@@ -1,4 +1,4 @@
-package com.nemisolv.ex09;
+package com.nemisolv.ex07_bai3;
 
 import org.junit.Test;
 
