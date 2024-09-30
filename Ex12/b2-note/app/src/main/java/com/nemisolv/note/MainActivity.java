@@ -85,6 +85,12 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        lvWork.setOnItemClickListener((parent, view, position, id) -> {
+            listWork.remove(position);
+            adapterWork.notifyDataSetChanged();
+            saveData();
+        });
+
 
 
     }
