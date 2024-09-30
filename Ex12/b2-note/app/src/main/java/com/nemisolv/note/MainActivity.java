@@ -1,6 +1,7 @@
 package com.nemisolv.note;
 
 import android.app.AlertDialog;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -19,7 +20,9 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
     private Button btnAddWork;
@@ -29,15 +32,32 @@ public class MainActivity extends AppCompatActivity {
     private List<String> listWork;
     private ArrayAdapter<String> adapterWork;
 
+    // shared preferences
+    private SharedPreferences sharedPreferences;
+    private static final String SHARED_PREFS_NAME = "note";
+    private static final String WORK_LIST_KEY = "work_list";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setupViews();
+        sharedPreferences = getSharedPreferences(SHARED_PREFS_NAME, MODE_PRIVATE);
+
         listWork = new ArrayList<>();
         adapterWork = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listWork);
         lvWork.setAdapter(adapterWork);
+        loadData(); // Load data from SharedPreferences
+
         logic();
+    }
+
+    private void loadData() {
+        Set<String> workSet = sharedPreferences.getStringSet(WORK_LIST_KEY, new HashSet<>());
+        listWork.clear();
+        listWork.addAll(workSet);
+        adapterWork.notifyDataSetChanged();
+
     }
 
     private void logic() {
@@ -59,11 +79,22 @@ public class MainActivity extends AppCompatActivity {
             workName.setText("");
             workHour.setText("");
             workMinute.setText("");
-            
+
+            // save data
+            saveData();
+
         });
 
 
 
+    }
+
+    private void saveData() {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        Set<String> workSet = new HashSet<>(listWork);
+        editor.putStringSet(WORK_LIST_KEY, workSet);
+        editor.apply();
+        Toast.makeText(this, "Data saved", Toast.LENGTH_SHORT).show();
     }
 
     private void setupViews() {
