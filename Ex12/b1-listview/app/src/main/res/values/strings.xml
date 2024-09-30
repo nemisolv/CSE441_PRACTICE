@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">b1-listview</string>
+    <string-array name="phones">
+        <item>Iphone 7</item>
+        <item>Samsung Galaxy S8</item>
+        <item>Google Pixel</item>
+        <item>OnePlus 5</item>
+        <item>LG G6</item>
+        <item>HTC U11</item>
+        <item>Motorola Moto Z2</item>
+        <item>Blackberry KeyOne</item>
+        <item>Asus Zenfone 4</item>
+        <item>Lenovo P2</item>
+        <item>Microsoft Lumia 950</item>
+        <item>Apple iPhone 6</item>
+        <item>Samsung Galaxy S7</item>
+        <item>Google Nexus 6P</item>
+        <item>OnePlus 3T</item>
+        <item>LG V20</item>
+        <item>HTC 10</item>
+        <item>Moto G5 Plus</item>
+    </string-array>
+</resources>
