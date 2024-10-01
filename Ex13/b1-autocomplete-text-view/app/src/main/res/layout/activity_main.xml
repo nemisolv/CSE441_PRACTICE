@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:text="Autocompleted example" />
+
+    <TextView
+        android:id="@+id/txt_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5576be"
+        android:textColor="#fff"
+        android:text="TextView" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:completionThreshold="1"
+        android:hint="Choose a city" >
+        <requestFocus/>
+    </AutoCompleteTextView>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:completionThreshold="1"/>
+
+</LinearLayout>
