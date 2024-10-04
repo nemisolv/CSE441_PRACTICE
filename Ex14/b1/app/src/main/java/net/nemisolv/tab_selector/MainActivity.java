@@ -1,5 +1,6 @@
 package net.nemisolv.tab_selector;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -7,6 +8,7 @@ import android.widget.EditText;
 import android.widget.TabHost;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -34,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Xulycong();
+                add();
             }
 
-            private void Xulycong() {
+            private void add() {
                 try {
                     int a = Integer.parseInt(inputA.getText().toString());
                     int b = Integer.parseInt(inputB.getText().toString());
@@ -47,12 +49,12 @@ public class MainActivity extends AppCompatActivity {
                     inputA.setText("");
                     inputB.setText("");
                 } catch (NumberFormatException e) {
-                    // Handle invalid input
                 }
             }
         });
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     private void addControl() {
         TabHost tab = findViewById(R.id.tabhost);
         tab.setup();
@@ -60,13 +62,13 @@ public class MainActivity extends AppCompatActivity {
         // Setup Tab 1
         TabHost.TabSpec tab1 = tab.newTabSpec("t1");
         tab1.setContent(R.id.tab1);
-        tab1.setIndicator("Tab 1", getResources().getDrawable(R.drawable.ic_add)); // Use your icon here
-        tab.addTab(tab1);
+        tab1.setIndicator("Tab 1",
+                ContextCompat.getDrawable(this, R.drawable.ic_add));        tab.addTab(tab1);
 
         // Setup Tab 2
         TabHost.TabSpec tab2 = tab.newTabSpec("t2");
         tab2.setContent(R.id.tab2);
-        tab2.setIndicator("Tab 2", getResources().getDrawable(R.drawable.ic_history)); // Use your icon here
+        tab2.setIndicator("Tab 2", getResources().getDrawable(R.drawable.ic_history));
         tab.addTab(tab2);
 
         // Initialize views
