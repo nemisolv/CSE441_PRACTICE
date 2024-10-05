@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<employees>
+    <employee id="1" title="Architect">
+        <name>Alice Johnson</name>
+        <phone>4155551234</phone>
+    </employee>
+    <employee id="2" title="Developer">
+        <name>Bob Anderson</name>
+        <phone>4155555678</phone>
+    </employee>
+    <employee id="3" title="Designer">
+        <name>Clara Nguyen</name>
+        <phone>3105551234</phone>
+    </employee>
+    <employee id="4" title="Tester">
+        <name>David Park</name>
+        <phone>2125559876</phone>
+    </employee>
+    <employee id="5" title="Manager">
+        <name>Evelyn King</name>
+        <phone>3125554321</phone>
+    </employee>
+    <employee id="6" title="Architect">
+        <name>Frank Lewis</name>
+        <phone>7185556789</phone>
+    </employee>
+    <employee id="7" title="Developer">
+        <name>Grace Kim</name>
+        <phone>2135553456</phone>
+    </employee>
+    <employee id="8" title="Designer">
+        <name>Henry Clark</name>
+        <phone>2025551234</phone>
+    </employee>
+    <employee id="9" title="Tester">
+        <name>Irene Garcia</name>
+        <phone>5105557890</phone>
+    </employee>
+</employees>
