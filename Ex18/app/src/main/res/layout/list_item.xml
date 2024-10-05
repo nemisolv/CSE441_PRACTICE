@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+
+
+
+    <TextView
+        android:id="@+id/txt_song_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:text="2003" />
+
+    <TextView
+        android:id="@+id/txt_song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Gởi em ở cuối sông Hương" />
+    <ImageView
+        android:id="@+id/img_favorite"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/heart_fill" />
+
+</LinearLayout>
