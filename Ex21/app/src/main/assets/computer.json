@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Imac Pro",
+      "price": 5000
+    },
+    {
+      "id": 2,
+      "name": "Macbook Pro",
+      "price": 2000
+    },
+    {
+      "id": 3,
+      "name": "Mac Mini",
+      "price": 800
+    },
+    {
+      "id": 4,
+      "name": "Dell XPS",
+      "price": 1500
+    },
+    {
+      "id": 5,
+      "name": "Surface Pro",
+      "price": 1200
+    },
+    {
+      "id": 6,
+      "name": "HP Spectre",
+      "price": 1600
+    }
+  ],
+  "category_id": 1,
+  "category_name": "Computer"
+}
