@@ -1,0 +1,302 @@
+[
+  {
+    "id": "B27DCCN101",
+    "full_name": {
+      "first": "An",
+      "last": "Nguyen",
+      "midd": "Van"
+    },
+    "gender": "Nam",
+    "birth_date": "12/05/2008",
+    "email": "annguyen@example.com",
+    "address": "Hà Nội",
+    "major": "CNTT",
+    "gpa": 3.5,
+    "year": 2
+  },
+  {
+    "id": "B27DCCN102",
+    "full_name": {
+      "first": "Lan",
+      "last": "Tran",
+      "midd": "Thi"
+    },
+    "gender": "Nữ",
+    "birth_date": "15/07/2007",
+    "email": "lantran@example.com",
+    "address": "Đà Nẵng",
+    "major": "Kinh Tế",
+    "gpa": 3.8,
+    "year": 3
+  },
+  {
+    "id": "B27DCCN103",
+    "full_name": {
+      "first": "Minh",
+      "last": "Le",
+      "midd": "Van"
+    },
+    "gender": "Nam",
+    "birth_date": "20/01/2006",
+    "email": "minhle@example.com",
+    "address": "Hồ Chí Minh",
+    "major": "Xây Dựng",
+    "gpa": 3.0,
+    "year": 1
+  },
+  {
+    "id": "B27DCCN104",
+    "full_name": {
+      "first": "Hoa",
+      "last": "Pham",
+      "midd": "Thi"
+    },
+    "gender": "Nữ",
+    "birth_date": "30/09/2005",
+    "email": "hoapham@example.com",
+    "address": "Cần Thơ",
+    "major": "Hóa Học",
+    "gpa": 3.4,
+    "year": 4
+  },
+  {
+    "id": "B27DCCN105",
+    "full_name": {
+      "first": "Tuan",
+      "last": "Hoang",
+      "midd": "Van"
+    },
+    "gender": "Nam",
+    "birth_date": "22/11/2009",
+    "email": "tuanhoang@example.com",
+    "address": "Nha Trang",
+    "major": "Cơ Khí",
+    "gpa": 3.6,
+    "year": 2
+  },
+  {
+    "id": "B27DCCN106",
+    "full_name": {
+      "first": "Khanh",
+      "last": "Nguyen",
+      "midd": "Thi"
+    },
+    "gender": "Nữ",
+    "birth_date": "14/03/2008",
+    "email": "khanhnguyen@example.com",
+    "address": "Hải Phòng",
+    "major": "Điện Tử",
+    "gpa": 3.2,
+    "year": 3
+  },
+  {
+    "id": "B27DCCN107",
+    "full_name": {
+      "first": "Hanh",
+      "last": "Vu",
+      "midd": "Thi"
+    },
+    "gender": "Nữ",
+    "birth_date": "05/08/2006",
+    "email": "hanhvu@example.com",
+    "address": "Nam Định",
+    "major": "Ngôn Ngữ",
+    "gpa": 3.9,
+    "year": 1
+  },
+  {
+    "id": "B27DCCN108",
+    "full_name": {
+      "first": "Phong",
+      "last": "Bui",
+      "midd": "Van"
+    },
+    "gender": "Nam",
+    "birth_date": "19/12/2005",
+    "email": "phongbui@example.com",
+    "address": "Thành Phố Hồ Chí Minh",
+    "major": "Quản Trị Kinh Doanh",
+    "gpa": 3.1,
+    "year": 4
+  },
+  {
+    "id": "B27DCCN109",
+    "full_name": {
+      "first": "Mai",
+      "last": "Ngoc",
+      "midd": "Thi"
+    },
+    "gender": "Nữ",
+    "birth_date": "25/06/2007",
+    "email": "maingoc@example.com",
+    "address": "Biên Hòa",
+    "major": "Y Dược",
+    "gpa": 3.3,
+    "year": 3
+  },
+  {
+    "id": "B27DCCN110",
+    "full_name": {
+      "first": "Linh",
+      "last": "Truong",
+      "midd": "Thi"
+    },
+    "gender": "Nữ",
+    "birth_date": "11/02/2008",
+    "email": "linhtruong@example.com",
+    "address": "Vinh",
+    "major": "Sư Phạm",
+    "gpa": 3.7,
+    "year": 2
+  },
+  {
+    "id": "B27DCCN111",
+    "full_name": {
+      "first": "Dat",
+      "last": "Dang",
+      "midd": "Van"
+    },
+    "gender": "Nam",
+    "birth_date": "09/04/2009",
+    "email": "datdang@example.com",
+    "address": "Hà Tĩnh",
+    "major": "Tin Học",
+    "gpa": 3.0,
+    "year": 1
+  },
+  {
+    "id": "B27DCCN112",
+    "full_name": {
+      "first": "Yen",
+      "last": "Nguyen",
+      "midd": "Thi"
+    },
+    "gender": "Nữ",
+    "birth_date": "27/10/2005",
+    "email": "yennguyen@example.com",
+    "address": "Hà Giang",
+    "major": "Kỹ Thuật Môi Trường",
+    "gpa": 3.4,
+    "year": 4
+  },
+  {
+    "id": "B27DCCN113",
+    "full_name": {
+      "first": "Son",
+      "last": "Le",
+      "midd": "Van"
+    },
+    "gender": "Nam",
+    "birth_date": "18/05/2006",
+    "email": "sonle@example.com",
+    "address": "Hà Nam",
+    "major": "Marketing",
+    "gpa": 3.5,
+    "year": 2
+  },
+  {
+    "id": "B27DCCN114",
+    "full_name": {
+      "first": "Quynh",
+      "last": "Tran",
+      "midd": "Thi"
+    },
+    "gender": "Nữ",
+    "birth_date": "24/09/2007",
+    "email": "quynhtran@example.com",
+    "address": "Ninh Bình",
+    "major": "Luật",
+    "gpa": 3.6,
+    "year": 3
+  },
+  {
+    "id": "B27DCCN115",
+    "full_name": {
+      "first": "Hieu",
+      "last": "Nguyen",
+      "midd": "Van"
+    },
+    "gender": "Nam",
+    "birth_date": "02/01/2008",
+    "email": "hieunguyen@example.com",
+    "address": "Quảng Ninh",
+    "major": "Tài Chính",
+    "gpa": 2.9,
+    "year": 1
+  },
+  {
+    "id": "B27DCCN116",
+    "full_name": {
+      "first": "Tam",
+      "last": "Pham",
+      "midd": "Thi"
+    },
+    "gender": "Nữ",
+    "birth_date": "07/03/2009",
+    "email": "tampham@example.com",
+    "address": "Thái Nguyên",
+    "major": "Viễn Thông",
+    "gpa": 3.8,
+    "year": 2
+  },
+  {
+    "id": "B27DCCN117",
+    "full_name": {
+      "first": "Binh",
+      "last": "Vu",
+      "midd": "Van"
+    },
+    "gender": "Nam",
+    "birth_date": "30/08/2006",
+    "email": "binhvu@example.com",
+    "address": "Bắc Ninh",
+    "major": "Khoa Học Máy Tính",
+    "gpa": 3.1,
+    "year": 3
+  },
+  {
+    "id": "B27DCCN118",
+    "full_name": {
+      "first": "Thi",
+      "last": "Nguyen",
+      "midd": "Van"
+    },
+    "gender": "Nữ",
+    "birth_date": "17/11/2005",
+    "email": "thinguyen@example.com",
+    "address": "Hà Nội",
+    "major": "Nông Nghiệp",
+    "gpa": 3.3,
+    "year": 4
+  },
+  {
+    "id": "B27DCCN119",
+    "full_name": {
+      "first": "Cuong",
+      "last": "Truong",
+      "midd": "Van"
+    },
+    "gender": "Nam",
+    "birth_date": "04/12/2007",
+    "email": "cuongtruong@example.com",
+    "address": "Quảng Nam",
+    "major": "Công Nghệ Thông Tin",
+    "gpa": 3.7,
+    "year": 2
+  },
+  {
+    "id": "B27DCCN120",
+    "full_name": {
+      "first": "Nhi",
+      "last": "Mai",
+      "midd": "Thi"
+    },
+    "gender": "Nữ",
+    "birth_date": "16/06/2008",
+    "email": "nhimai@example.com",
+    "address": "Bến Tre",
+    "major": "Thiết Kế Đồ Họa",
+    "gpa": 3.9,
+    "year": 1
+  }
+]

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Recycler View List Students</string>
+
+    <string-array name="addresses">
+
+        <item>Hà Nội</item>
+        <item>Hồ Chí Minh</item>
+        <item>Đà Nẵng</item>
+        <item>Hải Phòng</item>
+        <item>Cần Thơ</item>
+        <item>Đà Lạt</item>
+        <item>Nha Trang</item>
+        <item>Phan Thiết</item>
+
+    </string-array>
+</resources>

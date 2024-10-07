@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "net.nemisolv.readnews"
+    namespace = "net.nemisolv.recyclerview"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "net.nemisolv.readnews"
+        applicationId = "net.nemisolv.recyclerview"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -29,12 +29,15 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
-
-    useLibrary("org.apache.http.legacy")
 }
 
 dependencies {
-    implementation("org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2")
+
+implementation("com.google.code.gson:gson:2.8.9")
+//import jackson
+    implementation("com.fasterxml.jackson.core:jackson-core:2.13.0")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.13.0")
+    implementation("com.fasterxml.jackson.core:jackson-annotations:2.13.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

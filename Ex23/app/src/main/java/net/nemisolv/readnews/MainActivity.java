@@ -41,50 +41,7 @@ public class MainActivity extends AppCompatActivity {
     class LoadExampleTask extends AsyncTask<Void, Void, ArrayList<News>> {
         @Override
         protected ArrayList<News> doInBackground(Void... voids) {
-            List<News> mylist = new ArrayList<>();
-            try {
-                XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
-                XmlPullParser parser = factory.newPullParser();
-                XMLParser myparser = new XMLParser();
-                String xml = myparser.getXmlFromUrl(URL); // getting XML from URL
-                parser.setInput(new StringReader(xml));
-                int eventType = parser.getEventType();
-                String title = "", link = "", description = "";
-
-                while (eventType != XmlPullParser.END_DOCUMENT) {
-                    String tagName = parser.getName();
-                    News currentItem = null;
-                    switch (eventType) {
-                        case XmlPullParser.START_TAG:
-                            tagName = parser.getName();
-                            if (tagName.equals("item")) {
-                                currentItem = new News();
-                            } else if (currentItem != null) {
-                                if (tagName.equals("title")) {
-                                    currentItem.setTitle(parser.nextText());
-                                } else if (tagName.equals("description")) {
-                                    currentItem.setDescription(parser.nextText());
-                                } else if (tagName.equals("link")) {
-                                    currentItem.setUrl(parser.nextText());
-                                } else if (tagName.equals("enclosure")) {
-                                    String imgUrl = parser.getAttributeValue(null, "url");
-                                    currentItem.setImage(loadImage(imgUrl)); // Load as Bitmap
-                                }
-                            }
-                            break;
-
-                        case XmlPullParser.END_TAG:
-                            if (parser.getName().equals("item") && currentItem != null) {
-                                mylist.add(currentItem);
-                            }
-                            break;
-                    }
-                    eventType = parser.next();
-                }
-            } catch (XmlPullParserException | IOException e) {
-                e.printStackTrace();
-            }
-            return (ArrayList<News>) mylist;
+           return new XMLParser().parseXML(URL);
         }
 
         private String extractImageUrl(String description) {
@@ -106,18 +63,6 @@ public class MainActivity extends AppCompatActivity {
             super.onPostExecute(result);
             myadapter.addAll(result);
         }
-        private Bitmap loadImage(String imgUrl) {
-            try {
-                URL url = new URL(imgUrl);
-                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-                connection.setDoInput(true);
-                connection.connect();
-                InputStream input = connection.getInputStream();
-                return BitmapFactory.decodeStream(input);
-            } catch (Exception e) {
-                Log.e("MainActivity", "Error loading image: " + imgUrl, e);
-                return null; // Return null if image loading fails
-            }
-        }
+
     }
 }

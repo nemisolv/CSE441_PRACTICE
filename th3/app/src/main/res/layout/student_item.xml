@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/imageGender"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_man"
+        app:tint="@color/green" /> <!-- Replace with actual gender icon -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textTitleStudentId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B26DCCN102"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textStudentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoàng Đức Minh"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textGPA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.37"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+</LinearLayout>
