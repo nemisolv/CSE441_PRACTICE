@@ -1,4 +1,4 @@
-package net.nemisolv.recyclerview;
+package net.nemisolv.recyclerview.ui;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
@@ -25,6 +24,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import net.nemisolv.recyclerview.R;
+import net.nemisolv.recyclerview.data.model.Student;
+import net.nemisolv.recyclerview.ui.adapter.StudentAdapter;
+import net.nemisolv.recyclerview.utils.JsonUtils;
+import net.nemisolv.recyclerview.utils.SearchUtils;
+import net.nemisolv.recyclerview.utils.SortedUtils;
 
 import java.util.List;
 

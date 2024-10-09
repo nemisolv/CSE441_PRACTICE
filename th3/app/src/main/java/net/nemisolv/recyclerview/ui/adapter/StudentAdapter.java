@@ -1,4 +1,4 @@
-package net.nemisolv.recyclerview;
+package net.nemisolv.recyclerview.ui.adapter;
 
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -9,6 +9,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import net.nemisolv.recyclerview.R;
+import net.nemisolv.recyclerview.ui.StudentDetailActivity;
+import net.nemisolv.recyclerview.data.model.Student;
 
 import java.util.List;
 

@@ -1,6 +1,5 @@
-package net.nemisolv.recyclerview;
+package net.nemisolv.recyclerview.data.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;

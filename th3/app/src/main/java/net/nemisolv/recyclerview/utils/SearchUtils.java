@@ -1,4 +1,6 @@
-package net.nemisolv.recyclerview;
+package net.nemisolv.recyclerview.utils;
+
+import net.nemisolv.recyclerview.data.model.Student;
 
 import java.util.ArrayList;
 import java.util.List;

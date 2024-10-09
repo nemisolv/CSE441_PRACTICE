@@ -13,13 +13,13 @@
         android:theme="@style/Theme.RecyclerViewListStudents"
         tools:targetApi="31">
         <activity
-            android:name=".StudentFormActivity"
+            android:name=".ui.StudentFormActivity"
             android:exported="false" />
         <activity
-            android:name=".StudentDetailActivity"
+            android:name=".ui.StudentDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

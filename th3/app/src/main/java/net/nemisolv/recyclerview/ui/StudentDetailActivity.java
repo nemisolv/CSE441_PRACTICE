@@ -1,4 +1,4 @@
-package net.nemisolv.recyclerview;
+package net.nemisolv.recyclerview.ui;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -17,6 +17,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import net.nemisolv.recyclerview.R;
+import net.nemisolv.recyclerview.data.model.Student;
 
 public class StudentDetailActivity extends AppCompatActivity {
 

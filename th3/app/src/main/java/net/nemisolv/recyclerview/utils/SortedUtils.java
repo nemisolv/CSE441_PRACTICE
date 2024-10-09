@@ -1,6 +1,7 @@
-package net.nemisolv.recyclerview;
+package net.nemisolv.recyclerview.utils;
 
-import java.util.Collections;
+import net.nemisolv.recyclerview.data.model.Student;
+
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;

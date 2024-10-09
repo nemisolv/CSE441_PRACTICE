@@ -1,10 +1,12 @@
-package net.nemisolv.recyclerview;
+package net.nemisolv.recyclerview.utils;
 
 import android.content.Context;
 import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+
+import net.nemisolv.recyclerview.data.model.Student;
 
 import java.io.BufferedReader;
 import java.io.IOException;

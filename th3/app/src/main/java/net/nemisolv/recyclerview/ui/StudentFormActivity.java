@@ -1,4 +1,4 @@
-    package net.nemisolv.recyclerview;
+    package net.nemisolv.recyclerview.ui;
     
     import android.annotation.SuppressLint;
     import android.app.AlertDialog;
@@ -21,7 +21,10 @@
     import androidx.core.graphics.Insets;
     import androidx.core.view.ViewCompat;
     import androidx.core.view.WindowInsetsCompat;
-    
+
+    import net.nemisolv.recyclerview.R;
+    import net.nemisolv.recyclerview.data.model.Student;
+
     public class StudentFormActivity extends AppCompatActivity {
     
         private EditText editTextStudentId, editTextFullName, editTextBirthDate, editTextEmail, editTextGpa;
