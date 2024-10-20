@@ -42,7 +42,6 @@ public class StudentFormActivity extends AppCompatActivity {
         etGrade = findViewById(R.id.etGrade);
     }
 
-    // Initialize Firebase Firestore reference
     private void initFirebase() {
         db = FirebaseFirestore.getInstance();
     }
