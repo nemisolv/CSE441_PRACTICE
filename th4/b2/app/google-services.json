@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "669501769025",
+    "project_id": "fir-1-for-android",
+    "storage_bucket": "fir-1-for-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669501769025:android:66ff1687ec704d74620dc0",
+        "android_client_info": {
+          "package_name": "net.nemisolv.hello_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXqpt0LrJTubTScxYXCup6SypLYq0YJ4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
